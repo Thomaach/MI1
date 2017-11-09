@@ -1,15 +1,19 @@
+head {
+    background-color: lightgrey;
+}
+
 body {
-        background-color: white;
-     }
+    background-color: lightgrey;
+}
 
-h1  {
-        color: black;
-    }
+h1 {
+    color: forestgreen;
+}
 
-h2  {
-        color: aqua;
-    }
+h2 {
+    color: black;
+}
 
-p   {
-        color: blue;
-    }
+p {
+    color: blue;
+}
