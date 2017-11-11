@@ -1,0 +1,67 @@
+* {
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            
+        }
+
+        .menu {
+            width: 25%;
+
+        }
+
+        .content {
+            width: 75%;
+            
+
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: white;
+            
+
+        }
+
+        .menu li:hover {
+            background-color: #80808C;
+            
+            
+        }
+        nav {
+            float: left;
+            max-width: 50%;
+            margin: 0;
+            padding: 1em;
+            background-color: #ffffff;
+            
+        }
+
+        body{
+            background-color:rgb(177, 212, 181);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

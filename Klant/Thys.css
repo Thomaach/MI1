@@ -1,0 +1,81 @@
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#historie {
+    top: 120px;
+    background-color: #009688;
+}
+
+#promoties {
+    top: 200px;
+    background-color: #009688;
+}
+
+#tijdelijkeproducten {
+    top: 260px;
+    background-color: #009688;
+}
+
+#receptjes {
+    top: 340px;
+    background-color: #009688
+}
+
+#saladebar {
+    top: 420px;
+    background-color: #009688
+}
+
+#schotels {
+    top: 480px;
+    background-color: #009688
+}
+
+#contact {
+    top: 560px;
+    background-color: #009688
+}
+
+
+p {
+    margin-left: 80px;
+}
+
+h2 {
+    margin-left: 80px;
+}
+
+h1 {
+    margin-left: 80px;
+}
+
+body {
+    background-color: #D8E8DA
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    line-height: 100px;
+}
