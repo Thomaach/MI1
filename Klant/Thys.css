@@ -52,6 +52,7 @@
 
 p {
     margin-left: 80px;
+    font-size: 20px;
 }
 
 h2 {
@@ -78,4 +79,13 @@ body {
     top: 18px;
     left: 10px;
     line-height: 100px;
+}
+
+li{
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
 }
