@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
     <title>Groenten & Fruit Thys</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="nl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Thys.css">
-    <div class="header">
-        <a href="index.html"><img src="Images/Logo_Thys.png" id="logo" alt="Logo Thys"></a>
-        <h1 id="headh1">Home</h1>
-    </div>
+    <link rel="shortcut icon" href="Images/Thys_Logo_Met_Achtergrond.png" />
+
 </head>
-    
-    <body>
-<div id="mySidenav">
-    <a href="Historie.html" id="historie"> Historie<img src="Images/HistoryMenu.png" id="fotoMenuHistorie" alt="Foto menu contact"></a>
-    <a href="promoties.html" id="promoties"> Promoties <img src="Images/PromotiesMenu.png" id="fotoMenuPromoties" alt="Foto menu contact"></a>
-    <a href="tijdelijkeproducten.html" id="tijdelijkeproducten"> Tijdelijke Producten <img src="Images/SeizoenMenu.png" id="fotoMenuTijdelijkeProducten" alt="Foto menu contact"></a>
-    <a href="receptjes.html" id="receptjes"> receptjes <img src="Images/ReceptMenu.png" id="fotoMenuRecepten" alt="Foto menu contact"></a>
-    <a href="saladebar.html" id="saladebar"> Saladebar <img src="Images/SaladebarMenu.png" id="fotoMenuSaladebar" alt="Foto menu contact"></a>
-    <a href="schotels.html" id="schotels"> Vlees- en kaasschotels <img src="Images/SchotelsMenu.png" id="fotoMenuSchotels" alt="Foto menu contact"></a>
-    <a href="contact.html" id="contact"> Contact <img src="Images/ContactMenu.png" id="fotoMenuContact" alt="Foto menu contact"></a>
-</div>
+
+
+
+
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="Images/Logo_Thys.png" id="logo" alt="Logo Thys"></a>
+        <h1 id="titel">Home</h1>
+    </header>
+
+    <nav id="mySidenav">
+        <a href="Historie.html" id="historie"> Historie<img src="Images/HistoryMenu.png" id="fotoMenuHistorie" alt="Foto menu contact"></a>
+        <a href="promoties.html" id="promoties"> Promoties <img src="Images/PromotiesMenu.png" id="fotoMenuPromoties" alt="Foto menu contact"></a>
+        <a href="tijdelijkeproducten.html" id="tijdelijkeproducten"> Tijdelijke Producten <img src="Images/SeizoenMenu.png" id="fotoMenuTijdelijkeProducten" alt="Foto menu contact"></a>
+        <a href="receptjes.html" id="receptjes"> receptjes <img src="Images/ReceptMenu.png" id="fotoMenuRecepten" alt="Foto menu contact"></a>
+        <a href="saladebar.html" id="saladebar"> Saladebar <img src="Images/SaladebarMenu.png" id="fotoMenuSaladebar" alt="Foto menu contact"></a>
+        <a href="schotels.html" id="schotels"> Vlees- en kaasschotels <img src="Images/SchotelsMenu.png" id="fotoMenuSchotels" alt="Foto menu contact"></a>
+        <a href="contact.html" id="contact"> Contact <img src="Images/ContactMenu.png" id="fotoMenuContact" alt="Foto menu contact"></a>
+    </nav>
+
+
     <h2>Openingsuren</h2>
-    <ul id="openingslijst">
+    <ul class="lijst">
         <li>Maandag</li>
-        <li id="maandag">14u - 18u30</li>
+        <li class="openingsdagen">14u - 18u30</li>
         <li>Dinsdag</li>
-        <li id="dinsdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Woensdag</li>
-        <li id="woensdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Donderdag </li>
-        <li id="donderdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Vrijdag</li>
-        <li id="vrijdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Zaterdag</li>
-        <li id="zaterdag">8u30 - 18u</li>
+        <li class="openingsdagen">8u30 - 18u</li>
         <li>Zondag</li>
-        <li id="zondag">gesloten</li>
+        <li class="openingsdagen">gesloten</li>
     </ul>
+
+
+
+
+
+    <figure id="map"></figure>
+    <script>
+        function initMap() {
+            var plaats = {
+                lat: 50.9233303,
+                lng: 3.9660330
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: plaats
+            });
+            var marker = new google.maps.Marker({
+                position: plaats,
+                map: map
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI6PBeJ3ZZUirKCK0ZYomVFXHD7_PJQpc&callback=initMap">
+
+
+    </script>
+
+
+
+
 </body>
 
 </html>

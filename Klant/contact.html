@@ -4,29 +4,32 @@
 <head>
     <title>Thys - Contact</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="nl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Thys.css">
-    <div class="header">
-        <a href="index.html" class="logo"><img src="Images/Logo_Thys.png" id="logo" alt="Logo Thys" ></a>
-        <h1 class="headh1">Contact</h1>
-    </div>
-
+    <link rel="shortcut icon" href="Images/Thys_Logo_Met_Achtergrond.png" />
 
 </head>
 
+
+
 <body>
+    
+<header>
+    <a href="index.html" class="logo"><img src="Images/Logo_Thys.png" id="logo" alt="Logo Thys" ></a>
+    <h1 id="titel">Contact</h1>
+</header>
 
 
-   <div id="mySidenav">
+    <nav id="mySidenav">
         <a href="Historie.html" id="historie"> Historie<img src="Images/HistoryMenu.png" id="fotoMenuHistorie" alt="Foto menu contact"></a>
         <a href="promoties.html" id="promoties"> Promoties <img src="Images/PromotiesMenu.png" id="fotoMenuPromoties" alt="Foto menu contact"></a>
         <a href="tijdelijkeproducten.html" id="tijdelijkeproducten"> Tijdelijke Producten <img src="Images/SeizoenMenu.png" id="fotoMenuTijdelijkeProducten" alt="Foto menu contact"></a>
         <a href="receptjes.html" id="receptjes"> receptjes <img src="Images/ReceptMenu.png" id="fotoMenuRecepten" alt="Foto menu contact"></a>
         <a href="saladebar.html" id="saladebar"> Saladebar <img src="Images/SaladebarMenu.png" id="fotoMenuSaladebar" alt="Foto menu contact"></a>
         <a href="schotels.html" id="schotels"> Vlees- en kaasschotels <img src="Images/SchotelsMenu.png" id="fotoMenuSchotels" alt="Foto menu contact"></a>
-        <a href="contact.html" id="contact" > Contact <img src="Images/ContactMenu.png" id="fotoMenuContact" alt="Foto menu contact"></a>
-    </div>
-    
+        <a href="contact.html" id="contact"> Contact <img src="Images/ContactMenu.png" id="fotoMenuContact" alt="Foto menu contact"></a>
+    </nav>
+
 
     <ul id="contactgegevens">
         <li>Thys Groenten en fruit</li>
@@ -38,22 +41,33 @@
 
 
     <h2>Openingsuren</h2>
-    <ul id="openingslijst">
+    <ul class="lijst">
         <li>Maandag</li>
-        <li id="maandag">14u - 18u30</li>
+        <li class="openingsdagen">14u - 18u30</li>
         <li>Dinsdag</li>
-        <li id="dinsdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Woensdag</li>
-        <li id="woensdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Donderdag </li>
-        <li id="donderdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Vrijdag</li>
-        <li id="vrijdag">8u30 - 12u30 <br> 14u - 18u30</li>
+        <li class="openingsdagen">8u30 - 12u30 <br> 14u - 18u30</li>
         <li>Zaterdag</li>
-        <li id="zaterdag">8u30 - 18u</li>
+        <li class="openingsdagen">8u30 - 18u</li>
         <li>Zondag</li>
-        <li id="zondag">gesloten</li>
+        <li class="openingsdagen">gesloten</li>
     </ul>
+
+
+
+    <form action="verstuurEmail.php" method="post">
+        emailadres:<br>
+        <input type="email" name="email">
+        <br> Uw vraag:<br>
+        <input id="inputform" type="text" name="vraag">
+        <br>
+        <input id="submit" name="submit" type="submit" value="Verstuur">
+    </form>
 
 </body>
 
