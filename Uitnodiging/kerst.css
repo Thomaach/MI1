@@ -1,0 +1,190 @@
+ #logo {
+        width: 6em;
+        height: 6em;
+    }
+    #mySidenav a {
+        position: absolute;
+        left: 0em;
+        transition: 0.3s;
+        padding: 0.8em;
+        width: 5em;
+        text-decoration: inherit;
+        font-size: 1.25em;
+        color: white;
+        border-radius: 0 0.5em 0.5em 0;
+    }
+    #mySidenav a:hover {
+        left: 0;
+    }
+    #historie {
+        top: 6.2em;
+        background-color: #009688;
+    }
+    #promoties {
+        top: 9.2em;
+        background-color: #009688;
+    }
+    #hoofd {
+        top: 12.2em;
+        background-color: #009688;
+    }
+    #dessert {
+        top: 15.2em;
+        background-color: #009688;
+    }
+    #drank {
+        top: 18.2em;
+        background-color: #009688;
+    }
+    
+
+    p {
+        margin-left: 5em;
+        font-size: 1.25em;
+    }
+    h3 {
+        margin-left: 5em;
+    }
+    h2 {
+        margin-top: 5em;
+        margin-left: 7em;
+    }
+    h1 {
+        
+        margin-left: 0em;
+    }       
+    body {
+        background-image: url(kerst-banner-achtergrond.jpg)
+    }
+
+ul{
+    margin-top: 2em;
+}
+
+    .li{
+        
+        font-weight: bold;
+        margin-left: 5em;
+        list-style-type: square
+    }
+
+    #titel {
+        float: left;
+        
+        margin-top: -4em;
+        line-height: 6.25em;
+    }
+    .foto1 {
+        margin-left: 5em;
+        height: 30em;
+        width: 35em;
+    }
+    .fotoSaladebar {
+        margin-left: 5em;
+        height: 30em;
+        width: 45em;
+    }    
+    .fotoSeizoensGroenten {
+        margin-left: 5em;
+        height: 15%;
+        width: 15%;
+    }    
+    .fotoPromotie
+    {
+        margin-left: 5em;
+        height: 10em;
+        width: 20em;
+    }
+    #contactgegevens {
+        margin-left: 5em;
+        font-size: 1.25em;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .lijst {
+        margin-left: 5em;
+        font-size: 1.25em;
+    }
+    .saladeLijst {
+        list-style: circle;
+        margin-left: 5em;
+        font-size: 1.25em;
+    }
+    .openingsdagen {
+        padding-left: 7em;
+    }    
+    .gerechten {
+        padding-left: 2em;
+    }    
+    .menu{
+        font-weight: bold;
+    }    
+    #map{
+        height: 20em;
+        width: 20em;
+        left: 7em;
+    }    
+    form{
+        margin-left: 9em;
+    }    
+    #inputform
+    {
+        height: 10em;
+        width: 15em;
+    }
+    a:link
+    {
+        text-decoration: none;
+        color: brown;
+    }    
+    a:visited{
+        color: brown;
+        text-decoration: none;
+    }    
+    body > div:last-child img{width: 0px; height: 0px;}
+    
+
+@media screen and (max-width: 800px) {
+
+    #mySidenav a {
+        left: 0em;
+        width: 5em;
+        
+    } 
+     
+    .openingsdagen {
+        padding-left: 5em;
+    }    
+    .gerechten {
+        padding-left: 2em;
+    }    
+    #map{
+        height: 15em;
+        width: 15em;        
+    }        
+}
+
+@media screen and (max-width: 450px) {
+
+    #mySidenav a {        
+        left: 0em;
+        width: 5em;        
+    }
+   
+    .foto1 {
+        height: 14em;
+        width: 19em;
+    }
+    .fotoSaladebar {
+        height: 10em;
+        width: 20em;
+    }           
+    .openingsdagen {
+        padding-left: 5em;
+    }        
+    #map{
+        height: 15em;
+        width: 15em;
+    }        
+}
